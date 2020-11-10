@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  background-image: url('./img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  transform-style: preserve-3d;
+  background-color:   rgba(255,255,255,0.9);
+  min-height: 80vh;
+  width: 35rem;
+  border-radius: 60px;
+  padding: 0rem 5rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.sneaker {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sneaker img {
+  width: 20rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background: #8a2387; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8a2387, #e94057, #f27121); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 3px 3px 3px 3px rgba(189, 187, 187, 0.644)
+}
+
+.info h1 {
+  font-size: 3rem;
+  text-align: center;
+  transition: all 0.75s ease-out;
+}
+strong{
+  color:#ee352f;
+}
+.info h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+.sizes {
+  display: flex;
+  justify-content: center;
+  transition: all 0.75s ease-out;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.more {
+  color: rgb(104, 146, 223);
+}
+.sizes .more:hover{
+  background-color: #d3d3d3;
+}
+.sizes button {
+  padding: 0.5rem 2rem;
+  margin: 0 0.5rem;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+}
+button.active {
+  background: #60a760;
+  color: white;
+}
+.active:hover{
+  background: #8aad8a;
+}
+.github {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  transition: all 0.75s ease-out;
+}
+.github button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #ee352f;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+
+.github button:hover{
+  background: #e75752;
+}
+
+.sizes, .github, .more, button{
+  transition: linear 300ms;
+}
+
+@media (max-width: 767px){
+  .card {
+    min-height: 30vh;
+    width: 20rem;
+    padding: 0rem 3rem;
+  }
+}
