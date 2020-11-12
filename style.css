@@ -70,7 +70,7 @@ strong{
   font-weight: lighter;
   transition: all 0.75s ease-out;
 }
-.sizes {
+.btn-group {
   display: flex;
   justify-content: center;
   transition: all 0.75s ease-out;
@@ -82,10 +82,10 @@ a{
 .more {
   color: rgb(104, 146, 223);
 }
-.sizes .more:hover{
+.btn-group .more:hover{
   background-color: #d3d3d3;
 }
-.sizes button {
+.btn-group button {
   padding: 0.5rem 2rem;
   margin: 0 0.5rem;
   background: none;

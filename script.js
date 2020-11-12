@@ -5,7 +5,7 @@ const title = document.querySelector(".title");
 const sneaker = document.querySelector(".sneaker img");
 const github = document.querySelector(".github");
 const description = document.querySelector(".info h3");
-const sizes = document.querySelector(".sizes");
+const btn = document.querySelector(".btn-group");
 
 container.addEventListener("mousemove", (e) => {
   let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
@@ -19,7 +19,7 @@ container.addEventListener("mouseenter", (e) => {
   title.style.transform = "translateZ(150px)";
   sneaker.style.transform = "translateZ(70px) rotateZ(-45deg)";
   description.style.transform = "translateZ(125px)";
-  sizes.style.transform = "translateZ(100px)";
+  btn.style.transform = "translateZ(100px)";
   github.style.transform = "translateZ(75px)";
 });
 
@@ -30,6 +30,6 @@ container.addEventListener("mouseleave", (e) => {
   title.style.transform = "translateZ(0px)";
   sneaker.style.transform = "translateZ(0px) rotateZ(0deg)";
   description.style.transform = "translateZ(0px)";
-  sizes.style.transform = "translateZ(0px)";
+  btn.style.transform = "translateZ(0px)";
   github.style.transform = "translateZ(0px)";
 });
