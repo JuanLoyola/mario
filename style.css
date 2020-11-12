@@ -32,13 +32,13 @@ body {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
-.sneaker {
+.mario {
   min-height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.sneaker img {
+.mario img {
   width: 20rem;
   z-index: 2;
   transition: all 0.75s ease-out;
@@ -123,7 +123,7 @@ button.active {
   background: #e75752;
 }
 
-.sizes, .github, .more, button{
+.github, .more, button{
   transition: linear 300ms;
 }
 

@@ -2,7 +2,7 @@ const card = document.querySelector(".card");
 const container = document.querySelector(".container");
 
 const title = document.querySelector(".title");
-const sneaker = document.querySelector(".sneaker img");
+const mario = document.querySelector(".mario img");
 const github = document.querySelector(".github");
 const description = document.querySelector(".info h3");
 const btn = document.querySelector(".btn-group");
@@ -17,7 +17,7 @@ container.addEventListener("mouseenter", (e) => {
   card.style.transition = "none";
 
   title.style.transform = "translateZ(150px)";
-  sneaker.style.transform = "translateZ(70px) rotateZ(-45deg)";
+  mario.style.transform = "translateZ(70px) rotateZ(-45deg)";
   description.style.transform = "translateZ(125px)";
   btn.style.transform = "translateZ(100px)";
   github.style.transform = "translateZ(75px)";
@@ -28,7 +28,7 @@ container.addEventListener("mouseleave", (e) => {
   card.style.transform = `rotateY(0deg) rotateX(0deg)`;
 
   title.style.transform = "translateZ(0px)";
-  sneaker.style.transform = "translateZ(0px) rotateZ(0deg)";
+  mario.style.transform = "translateZ(0px) rotateZ(0deg)";
   description.style.transform = "translateZ(0px)";
   btn.style.transform = "translateZ(0px)";
   github.style.transform = "translateZ(0px)";
